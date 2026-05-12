@@ -1,0 +1,9 @@
+echo "# aa" > README.md
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+
+
+printf "protocol=https\nhost=github.com\n" | git credential-manager erase
+
+git push -u origin main
